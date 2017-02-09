@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html class="resize">
+<head>
+  <script>try{window.open=function(){};window.print=function(){};window.alert=function(){};window.prompt=function(){};window.confirm=function(){};}catch(e){}</script>
+  <title>Mode Report</title>
+  <base target="_parent" />
+
+  
+
+  <script src="//assets.modeanalytics.com/assets/mode.embed-491e6b43b080583cd7929122485bd5a8476c1d28a68df3ac3c495b4083f8983f.js"></script>
+  <script src="//assets.modeanalytics.com/assets/external-d7667bbd44dbe720f21dac7e148149a40050c9be7e5a60e4775c467175543236.js"></script>
+
+  <script type="text/javascript" src="//assets.modeanalytics.com/assets/system-polyfills.22f0a1dc8b1322c03429486f043e3043.js" ng-csp="true"></script>
+  <script type="text/javascript" src="//assets.modeanalytics.com/assets/system-csp-production.85d0ef965c595fdf23aafcfa3d849cc6.js" ng-csp="true"></script>
+  <script type="text/javascript" src="//assets.modeanalytics.com/assets/config.24baf5296396c9483e736455fea13c1e.js" ng-csp="true"></script>
+  <script type="text/javascript" src="//assets.modeanalytics.com/assets/vendor.bundle.6a29bd5ae98b1e0f5ceaf5f93df9e462.js" ng-csp="true"></script>
+  <script type="text/javascript" src="//assets.modeanalytics.com/assets/embed.bundle.251b487dc3a8501281d611f92ae9685a.js" ng-csp="true"></script>
+  <script type="text/javascript" defer="defer" src="//assets.modeanalytics.com/assets/index.embed.677c14809676e951875fdcc80753bc64.js" ng-csp="true"></script>
+
+  <link href="//assets.modeanalytics.com/assets/normalize-380ed64427a45720fea56aec41f489f03882d4745c6143cde7f15dd9b8920a74.css" media="all" rel="stylesheet" />
+  <link href="//assets.modeanalytics.com/assets/embed_report-3733abd40101386d50a35f956b892c817748e4c7e9e159b8e2043ee023654fe0.css" media="all" rel="stylesheet" />
+  <link href="//assets.modeanalytics.com/assets/bootstrap_grids-63a058fe8666ab98c88899fba79c9c07238d55a1db07022318d0f21167e3f8aa.css" media="all" rel="stylesheet" />
+  <style>html.resize{overflow-y:hidden;}</style>
+  <script>var qs={},v=window.location.search.substring(1).split('&');for(var i=0;i<v.length;i++){var p=v[i].split("=");if(typeof qs[p[0]]==="undefined"){qs[p[0]]=p[1];}else if(typeof qs[p[0]]==="string"){var a=[qs[p[0]],p[1]];qs[p[0]]=a;}else{qs[p[0]].push(p[1]);}};var mode={};mode.resize=function(){var width=$('html').width(),height=$('html').height();setTimeout(function(){window.parent.postMessage({name:'resize',width:width,height:height,id:qs.embed_id},"*")},0);};window.addEventListener('resize', mode.resize);setInterval(function(){mode.resize();},1500);</script>
+  <script>mode.capture=function(e){var r=e.getBoundingClientRect();if(r && r.top && r.left && r.width && r.height){window.parent.postMessage({name:'capture',top:r.top,left:r.left,width:r.width,height:r.height},"*");}}</script>
+</head>
+<body class="mode-embed mode-embedded">
+  <embed-content></embed-content>
+</body>
+</html>

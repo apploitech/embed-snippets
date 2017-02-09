@@ -1,0 +1,71 @@
+
+<job-list jobs="jobs" on-company-page="false" class="m-t-2 ng-isolate-scope"><div id="job-search-list" class="jobs-list ng-isolate-scope" infinite-scroll="jobs.more()" infinite-scroll-disabled="jobs.loading || jobs.exhausted || jobs.errors" ,="" infinite-scroll-distance="400">
+
+  <h3 class="text-muted text-xs-center m-t-3 ng-hide" ng-show="jobs.exhausted &amp;&amp; jobs.data.length === 0">No Jobs found</h3>
+  
+ <job-card class="animate-fade ng-scope ng-isolate-scope" job="j" ng-repeat="j in jobs.data track by j.uid" ng-click="viewJob(j, $index)" on-company-page="onCompanyPage" style=""><div class="jobs-card p-b-1 m-y-1 row">
+  <div class="hidden-sm-down col-md-2 ng-hide" ng-show="onCompanyPage">
+    <div class="logo-container-sm">
+      <div class="logo-sm" style="background-image:url(http://d37o2t2slkqywt.cloudfront.net/25a05283-4afe-45a8-fc61-f125a95efeb2)"></div>
+    </div>
+  </div>
+
+  <div ng-class="{'col-md-10': onCompanyPage}" class="col-xs-12">
+    <p>
+      <span class="ng-binding">London<!-- ngIf: ::job.city --><span ng-if="::job.city" class="ng-scope">,</span><!-- end ngIf: ::job.city --> England</span>
+      <span class="hidden-sm-down">|</span>
+      <span class="hidden-sm-down ng-binding">01.03.17</span>
+      <a class="share-link-text pull-right" ng-click="share(); $event.stopPropagation();">Share</a>
+     <span class="jobs-card-type pull-right hidden-sm-down m-r-2 ng-binding">Part Time</span>
+    </p>
+    <h2><a class="job-link ng-binding" href="/view/462162">Graphics Intern</a></h2>
+  </div>
+</div>
+</job-card><!-- end ngRepeat: j in jobs.data track by j.uid -->
+
+<job-card class="animate-fade ng-scope ng-isolate-scope" job="j" ng-repeat="j in jobs.data track by j.uid" ng-click="viewJob(j, $index)" on-company-page="onCompanyPage" style=""><div class="jobs-card p-b-1 m-y-1 row">
+  <div class="hidden-sm-down col-md-2 ng-hide" ng-show="onCompanyPage">
+    <div class="logo-container-sm">
+      <div class="logo-sm" style="background-image:url(http://d37o2t2slkqywt.cloudfront.net/25a05283-4afe-45a8-fc61-f125a95efeb2)"></div>
+    </div>
+  </div>
+
+  <div ng-class="{'col-md-10': onCompanyPage}" class="col-xs-12">
+    <p>
+      <!-- ngIf: ::onCompanyPage -->
+      <!-- ngIf: ::onCompanyPage && (job.city || job.state) -->
+      <span class="ng-binding">London<!-- ngIf: ::job.city --><span ng-if="::job.city" class="ng-scope">,</span><!-- end ngIf: ::job.city --> England</span>
+      <span class="hidden-sm-down">|</span>
+      <span class="hidden-sm-down ng-binding">01.03.17</span>
+      <a class="share-link-text pull-right" ng-click="share(); $event.stopPropagation();">Share</a>
+     <span class="jobs-card-type pull-right hidden-sm-down m-r-2 ng-binding">Part Time</span>
+    </p>
+    <h2><a class="job-link ng-binding" href="/view/462163">Personal Shopping Intern</a></h2>
+  </div>
+</div>
+</job-card><!-- end ngRepeat: j in jobs.data track by j.uid --><job-card class="animate-fade ng-scope ng-isolate-scope" job="j" ng-repeat="j in jobs.data track by j.uid" ng-click="viewJob(j, $index)" on-company-page="onCompanyPage" style=""><div class="jobs-card p-b-1 m-y-1 row">
+  <div class="hidden-sm-down col-md-2 ng-hide" ng-show="onCompanyPage">
+    <div class="logo-container-sm">
+      <div class="logo-sm" style="background-image:url(http://d37o2t2slkqywt.cloudfront.net/25a05283-4afe-45a8-fc61-f125a95efeb2)"></div>
+    </div>
+  </div>
+
+  <div ng-class="{'col-md-10': onCompanyPage}" class="col-xs-12">
+    <p>
+      <!-- ngIf: ::onCompanyPage -->
+      <!-- ngIf: ::onCompanyPage && (job.city || job.state) -->
+      <span class="ng-binding">London<!-- ngIf: ::job.city --><span ng-if="::job.city" class="ng-scope">,</span><!-- end ngIf: ::job.city --> England</span>
+      <span class="hidden-sm-down">|</span>
+      <span class="hidden-sm-down ng-binding">01.03.17</span>
+      <a class="share-link-text pull-right" ng-click="share(); $event.stopPropagation();">Share</a>
+     <span class="jobs-card-type pull-right hidden-sm-down m-r-2 ng-binding">Full Time</span>
+    </p>
+    <h2><a class="job-link ng-binding" href="/view/462164">Operations Executive</a></h2>
+  </div>
+</div>
+</job-card><!-- end ngRepeat: j in jobs.data track by j.uid -->
+
+  <h3 ng-show="jobs.errors" class="text-danger text-xs-center m-t-3 ng-hide">Server Error</h3>
+  <div><apploi-spinner ng-show="jobs.loading" class="ng-hide" style=""><div class="apploi-spinner-panel"><div class="apploi-spinner-wheel"></div></div></apploi-spinner></div>
+</div>
+</job-list>

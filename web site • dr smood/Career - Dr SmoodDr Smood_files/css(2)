@@ -1,0 +1,120 @@
+/* greek */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Advent Pro Light'), local('AdventPro-Light'), url(http://fonts.gstatic.com/s/adventpro/v4/sJaBfJYSFgoB80OL1_66m4kFOucaQAyNXA33dLaGans.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Advent Pro Light'), local('AdventPro-Light'), url(http://fonts.gstatic.com/s/adventpro/v4/sJaBfJYSFgoB80OL1_66m1Yo3yjVQ1y6DauKPXl5S54.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Advent Pro Light'), local('AdventPro-Light'), url(http://fonts.gstatic.com/s/adventpro/v4/sJaBfJYSFgoB80OL1_66mweOulFbQKHxPa89BaxZzA0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* greek */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Advent Pro Regular'), local('AdventPro-Regular'), url(http://fonts.gstatic.com/s/adventpro/v4/rjFlM5pzkJXhqq9bH4mmJwsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Advent Pro Regular'), local('AdventPro-Regular'), url(http://fonts.gstatic.com/s/adventpro/v4/Xfe7ShDKddJBJE_WqrWHYAsYbbCjybiHxArTLjt7FRU.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Advent Pro Regular'), local('AdventPro-Regular'), url(http://fonts.gstatic.com/s/adventpro/v4/rT9jpj7pBpZV6AmssbZKkwzyDMXhdD8sAj6OAJTFsBI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* greek */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Advent Pro Medium'), local('AdventPro-Medium'), url(http://fonts.gstatic.com/s/adventpro/v4/7kBth2-rT8tP40RmMMXMLHzFWe-eWPvgOvCgLW61n1o.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Advent Pro Medium'), local('AdventPro-Medium'), url(http://fonts.gstatic.com/s/adventpro/v4/7kBth2-rT8tP40RmMMXMLPfgCb1svrO3-Ym-Rpjvnho.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Advent Pro Medium'), local('AdventPro-Medium'), url(http://fonts.gstatic.com/s/adventpro/v4/7kBth2-rT8tP40RmMMXMLNeM9fzAXBk846EtUMhet0E.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* greek */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Advent Pro SemiBold'), local('AdventPro-SemiBold'), url(http://fonts.gstatic.com/s/adventpro/v4/3Jo-2maCzv2QLzQBzaKHV5qP_n5qkJEfsVFQVKM4s4g.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Advent Pro SemiBold'), local('AdventPro-SemiBold'), url(http://fonts.gstatic.com/s/adventpro/v4/3Jo-2maCzv2QLzQBzaKHV2tASdhiysHpWmctaYEsrdw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Advent Pro SemiBold'), local('AdventPro-SemiBold'), url(http://fonts.gstatic.com/s/adventpro/v4/3Jo-2maCzv2QLzQBzaKHV3XcDWh-RbO457623Zi1kyw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* greek */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Advent Pro Bold'), local('AdventPro-Bold'), url(http://fonts.gstatic.com/s/adventpro/v4/M4I6QiICt-ey_wZTpR2gKyUr6EwJsXdKEU-HN-7gTAs.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Advent Pro Bold'), local('AdventPro-Bold'), url(http://fonts.gstatic.com/s/adventpro/v4/M4I6QiICt-ey_wZTpR2gKzrEaqfC9P2pvLXik1Kbr9s.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Advent Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Advent Pro Bold'), local('AdventPro-Bold'), url(http://fonts.gstatic.com/s/adventpro/v4/M4I6QiICt-ey_wZTpR2gK2aVI6zN22yiurzcBKxPjFE.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
