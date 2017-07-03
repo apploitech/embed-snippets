@@ -1,0 +1,598 @@
+@import url(animate.css);
+
+#birthday-party-mode {
+	bottom: 20px;
+	position: fixed;
+	right: 30px;
+	z-index: 701;
+}
+body.whaside #birthday-party-mode {
+	right: 260px;
+}
+
+#birthday-party-mode > button {
+	-webkit-animation: glowing 6.5s infinite;
+	-moz-animation: glowing 6.5s infinite;
+	-ms-animation: glowing 6.5s infinite;
+	-o-animation: glowing 6.5s infinite;
+	animation: glowing 6.5s infinite;
+
+	background-color: #004A7F;
+	border: none;
+	border-radius: 20px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	height: 40px;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	width: 160px;
+	z-index: 3;
+	
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	
+	-webkit-transition: all .2s cubic-bezier(.77, 0, .175, 1);
+	-moz-transition: all .2s cubic-bezier(.77, 0, .175, 1);
+	-ms-transition: all .2s cubic-bezier(.77, 0, .175, 1);
+	-o-transition: all .2s cubic-bezier(.77, 0, .175, 1);
+	transition: all .2s cubic-bezier(.77, 0, .175, 1);
+}
+
+#birthday-party-mode > button .text {
+	background: transparent url(birthday-partymodebtn-text.png) center no-repeat;
+	background-size: 116px 40px;
+	display: block;
+	height: 40px;
+	left: 50%;
+	opacity: 1;
+	overflow: hidden;
+	position: absolute;
+	text-indent: 150%;
+	top: 0;
+	white-space: nowrap;
+	width: 116px;
+	z-index: 4;
+	
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	
+	-webkit-transition: opacity .25s linear;
+	-moz-transition: opacity .25s linear;
+	-ms-transition: opacity .25s linear;
+	-o-transition: opacity .25s linear;
+	transition: opacity .25s linear;
+}
+
+#birthday-party-mode > button .cake {
+	background: transparent url(birthday-partymodebtn-cake.png) center no-repeat;
+	background-size: 95px 95px;
+	bottom: 40px;
+	display: block;
+	height: 95px;
+	left: 50%;
+	margin-left: -47px;
+	opacity: 1;
+	position: absolute;
+	width: 95px;
+	z-index: -1;
+	
+	-webkit-transition: bottom .5s cubic-bezier(.77, 0, .175, 1), opacity .5s linear;
+	-moz-transition: bottom .5s cubic-bezier(.77, 0, .175, 1), opacity .5s linear;
+	-ms-transition: bottom .5s cubic-bezier(.77, 0, .175, 1), opacity .5s linear;
+	-o-transition: bottom .5s cubic-bezier(.77, 0, .175, 1), opacity .5s linear;
+	transition: bottom .5s cubic-bezier(.77, 0, .175, 1), opacity .5s linear;
+}
+
+#birthday-party-mode > button .close {
+	background: transparent url(birthday-partymodebtn-textpause.png) center bottom no-repeat;
+	background-size: 91px 17px;
+	display: block;
+	margin: 0 auto;
+	opacity: 0;
+	padding-bottom: 10px;
+	position: relative;
+	text-align: center;
+	width: 91px;
+	z-index: 4;
+	-webkit-transition: opacity .25s linear;
+	-moz-transition: opacity .25s linear;
+	-ms-transition: opacity .25s linear;
+	-o-transition: opacity .25s linear;
+	transition: opacity .25s linear;
+}
+
+/*
+#birthday-party-mode > button .icon-x {
+	opacity: 0;
+	position: relative;
+	-webkit-transition: opacity .25s linear;
+	-moz-transition: opacity .25s linear;
+	-ms-transition: opacity .25s linear;
+	-o-transition: opacity .25s linear;
+	transition: opacity .25s linear;
+	z-index: 4;
+}
+*/
+
+body.birthday-party-mode #birthday-party-mode > button .cake {
+	bottom: 0;
+	opacity: 0;
+}
+
+body.birthday-party-mode #birthday-party-mode > button .text {
+	opacity: 0;
+}
+
+/*body.birthday-party-mode #birthday-party-mode > button .icon-x {*/
+body.birthday-party-mode #birthday-party-mode > button .close {
+	opacity: 1;
+}
+
+#birthday-party-mode > button:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+#birthday-party-mode > button:after,
+#birthday-party-mode > button:before {
+	background-color: inherit;
+	content: "";
+	display: block;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+}
+
+#birthday-party-mode > button:after {
+	border-radius: 25px;
+	height: 50px;
+	margin: -25px 0 0 -82px;
+	opacity: .5;
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+	width: 164px;
+}
+
+#birthday-party-mode > button:before {
+	border-radius: 30px;
+	height: 58px;
+	margin: -29px 0 0 -83px;
+	opacity: .2;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+	width: 166px;
+}
+
+#birthday-party-mode .callout {
+	background: transparent url(birthday-party-mode-callout.png) 0 0 no-repeat;
+	background-size: 205px 150px;
+	bottom: 50px;
+	box-sizing: border-box;
+	color: #fff;
+	display: block;
+	font-style: italic;
+	font-weight: bold;
+	height: 150px;
+	line-height: 1.2;
+	padding: 42px 0 0 22px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	width: 205px;
+	z-index: 6;
+	
+	-webkit-transform: translate(50%,150%);
+	-moz-transform: translate(50%,150%);
+	-ms-transform: translate(50%,150%);
+	-o-transform: translate(50%,150%);
+	transform: translate(50%,150%);
+	
+	-webkit-transition: -webkit-transform .5s cubic-bezier(.77, 0, .175, 1), transform .5s cubic-bezier(.77, 0, .175, 1);
+	-moz-transition: -moz-transform .5s cubic-bezier(.77, 0, .175, 1), transform .5s cubic-bezier(.77, 0, .175, 1);
+	-ms-transition: -ms-transform .5s cubic-bezier(.77, 0, .175, 1), transform .5s cubic-bezier(.77, 0, .175, 1);
+	-o-transition: -o-transform .5s cubic-bezier(.77, 0, .175, 1), transform .5s cubic-bezier(.77, 0, .175, 1);
+	transition: transform .5s cubic-bezier(.77, 0, .175, 1);
+}
+body.birthday-party-mode #birthday-party-mode .callout {
+	-webkit-transform: translate(0,0);
+	-moz-transform: translate(0,0);
+	-ms-transform: translate(0,0);
+	-o-transform: translate(0,0);
+	transform: translate(0,0);
+}
+body.birthday-party-mode #birthday-party-mode .callout.hide {
+	-webkit-transform: translate(50%,150%);
+	-moz-transform: translate(50%,150%);
+	-ms-transform: translate(50%,150%);
+	-o-transform: translate(50%,150%);
+	transform: translate(50%,150%);
+}
+#birthday-party-mode .callout a {
+	color: #fff;
+	text-decoration: none;
+}
+#birthday-party-mode .callout strong {
+	display: block;
+	font-family: 'CentraleSans-Medium', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: .04em;
+	line-height: 18px;
+	margin-bottom: 2px;
+	padding-left: .04em;
+	text-transform: uppercase;
+}
+#birthday-party-mode .callout .icon-x {
+	bottom: 25px;
+	cursor: pointer;
+	position: absolute;
+	right: 4px;
+}
+
+#birthday-confetti-canvas {
+	background: transparent;
+	bottom: 0;
+	display: none;
+	left: 0;
+	pointer-events: none;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 700;
+}
+
+#birthday-balloons-1,
+#birthday-balloons-2,
+#birthday-balloons-3,
+#birthday-balloons-4 {
+	display: none;
+	position: fixed;
+	z-index: 699;
+}
+
+body.birthday-party-mode #birthday-balloons-1,
+body.birthday-party-mode #birthday-balloons-2,
+body.birthday-party-mode #birthday-balloons-3,
+body.birthday-party-mode #birthday-balloons-4 {
+	bottom: 0;
+	display: block;
+	-webkit-transform: translate(0,150%);
+	-moz-transform: translate(0,150%);
+	-ms-transform: translate(0,150%);
+	-o-transform: translate(0,150%);
+	transform: translate(0,150%);
+}
+
+.birthday-balloons-inner {
+	background: transparent url(birthday-balloons.png) 0 0 no-repeat;
+	background-size: 440px 310px;
+	display: block;
+	height: 310px;
+	width: 110px;
+	
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+	
+	-webkit-animation: balloonsidetoside 5s ease-in-out infinite;
+	-moz-animation: balloonsidetoside 5s ease-in-out infinite;
+	-ms-animation: balloonsidetoside 5s ease-in-out infinite;
+	-o-animation: balloonsidetoside 5s ease-in-out infinite;
+	animation: balloonsidetoside 5s ease-in-out infinite;
+}
+
+#birthday-balloons-1 { left: 8%; }
+#birthday-balloons-1 .birthday-balloons-inner { background-position: 0 0; }
+body.birthday-party-mode #birthday-balloons-1 {
+	-webkit-animation: balloonrise 7s ease infinite;
+	-moz-animation: balloonrise 7s ease infinite;
+	-ms-animation: balloonrise 7s ease infinite;
+	-o-animation: balloonrise 7s ease infinite;
+	animation: balloonrise 7s ease infinite;
+}
+
+#birthday-balloons-2 { left: 20%; }
+#birthday-balloons-2 .birthday-balloons-inner { background-position: -110px 0; }
+body.birthday-party-mode #birthday-balloons-2 {
+	-webkit-animation: balloonrise 6s 1.75s ease infinite;
+	-moz-animation: balloonrise 6s 1.75s ease infinite;
+	-ms-animation: balloonrise 6s 1.75s ease infinite;
+	-o-animation: balloonrise 6s 1.75s ease infinite;
+	animation: balloonrise 6s 1.75s ease infinite;
+}
+
+#birthday-balloons-3 { right: 35%; }
+#birthday-balloons-3 .birthday-balloons-inner { background-position: -220px 0; }
+body.birthday-party-mode #birthday-balloons-3 {
+	-webkit-animation: balloonrise 8s 1s ease infinite;
+	-moz-animation: balloonrise 8s 1s ease infinite;
+	-ms-animation: balloonrise 8s 1s ease infinite;
+	-o-animation: balloonrise 8s 1s ease infinite;
+	animation: balloonrise 8s 1s ease infinite;
+}
+
+#birthday-balloons-4 { right: 15%; }
+#birthday-balloons-4 .birthday-balloons-inner { background-position: -330px 0; }
+body.birthday-party-mode #birthday-balloons-4 {
+	-webkit-animation: balloonrise 7.5s .5s ease infinite;
+	-moz-animation: balloonrise 7.5s .5s ease infinite;
+	-ms-animation: balloonrise 7.5s .5s ease infinite;
+	-o-animation: balloonrise 7.5s .5s ease infinite;
+	animation: balloonrise 7.5s .5s ease infinite;
+}
+
+#birthday-disco-ball {
+	left: 30px;
+	padding-top: 40px;
+	position: fixed;
+	top: 70px;
+	-webkit-transform: translateY(-150%);
+	-moz-transform: translateY(-150%);
+	-ms-transform: translateY(-150%);
+	transform: translateY(-150%);
+	-webkit-transition: -webkit-transform .75s cubic-bezier(.77, 0, .175, 1), transform .75s cubic-bezier(.77, 0, .175, 1);
+	-moz-transition: -moz-transform .75s cubic-bezier(.77, 0, .175, 1), transform .75s cubic-bezier(.77, 0, .175, 1);
+	-ms-transition: -ms-transform .75s cubic-bezier(.77, 0, .175, 1), transform .75s cubic-bezier(.77, 0, .175, 1);
+	transition: transform .75s cubic-bezier(.77, 0, .175, 1);
+	z-index: 699;
+}
+
+#birthday-disco-ball.active {
+	-webkit-transform: translateY(0%);
+	-moz-transform: translateY(0%);
+	-ms-transform: translateY(0%);
+	transform: translateY(0%);
+}
+
+#birthday-disco-ball .hanger {
+	background: #fff;
+	width: 3px;
+	border-right: 2px solid #999;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+
+#birthday-disco-ball .discoball {
+	background: lightgrey url(discoball.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+	-webkit-animation: hue 1s linear infinite alternate;
+	-moz-animation: hue 1s linear infinite alternate;
+	-ms-animation: hue 1s linear infinite alternate;
+	-o-animation: hue 1s linear infinite alternate;
+	animation: hue 1s linear infinite alternate;
+	border-radius: 200px;
+/*	border: 1px solid lightgrey;*/
+	cursor: pointer;
+	height: 200px;
+	width: 200px;
+	box-shadow: 0 3px 100px -3px lightgrey;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+		filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(360deg);
+		filter: hue-rotate(360deg);
+  }
+}
+@-moz-keyframes hue {
+  from {
+    -moz-filter: hue-rotate(0deg);
+		filter: hue-rotate(0deg);
+  }
+
+  to {
+    -moz-filter: hue-rotate(360deg);
+		filter: hue-rotate(360deg);
+  }
+}
+@-ms-keyframes hue {
+  from {
+    -ms-filter: hue-rotate(0deg);
+		filter: hue-rotate(0deg);
+  }
+
+  to {
+    -ms-filter: hue-rotate(360deg);
+		filter: hue-rotate(360deg);
+  }
+}
+@-o-keyframes hue {
+  from {
+    -o-filter: hue-rotate(0deg);
+		filter: hue-rotate(0deg);
+  }
+
+  to {
+    -o-filter: hue-rotate(360deg);
+		filter: hue-rotate(360deg);
+  }
+}
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+		filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(360deg);
+		filter: hue-rotate(360deg);
+  }
+}
+
+@-webkit-keyframes glowing {
+  0% { background-color: #a41260; }
+  20% { background-color: #f1732f; }
+	40% { background-color: #efb534; }
+	60% { background-color: #4dae33; }
+	80% { background-color: #117c9e; }
+	100% { background-color: #a41260; }
+}
+@-moz-keyframes glowing {
+  0% { background-color: #a41260; }
+  20% { background-color: #f1732f; }
+	40% { background-color: #efb534; }
+	60% { background-color: #4dae33; }
+	80% { background-color: #117c9e; }
+	100% { background-color: #a41260; }
+}
+@-ms-keyframes glowing {
+  0% { background-color: #a41260; }
+  20% { background-color: #f1732f; }
+	40% { background-color: #efb534; }
+	60% { background-color: #4dae33; }
+	80% { background-color: #117c9e; }
+	100% { background-color: #a41260; }
+}
+@-o-keyframes glowing {
+  0% { background-color: #a41260; }
+  20% { background-color: #f1732f; }
+	40% { background-color: #efb534; }
+	60% { background-color: #4dae33; }
+	80% { background-color: #117c9e; }
+	100% { background-color: #a41260; }
+}
+@keyframes glowing {
+  0% { background-color: #a41260; }
+  20% { background-color: #f1732f; }
+	40% { background-color: #efb534; }
+	60% { background-color: #4dae33; }
+	80% { background-color: #117c9e; }
+	100% { background-color: #a41260; }
+}
+
+@-webkit-keyframes balloonrise {
+  0% { -webkit-transform: translate(0,101%); transform: translate(0,101%); bottom: 0; }
+	100% { -webkit-transform: translate(45%,101%); transform: translate(45%,101%); bottom: 150%; }
+}
+@-moz-keyframes balloonsidetoside {
+  0% { -moz-transform: translate(0,101%); transform: translate(0,101%); bottom: 0; }
+	100% { -moz-transform: translate(45%,101%); transform: translate(45%,101%); bottom: 150%; }
+}
+@-ms-keyframes balloonsidetoside {
+  0% { -ms-transform: translate(0,101%); transform: translate(0,101%); bottom: 0; }
+	100% { -ms-transform: translate(45%,101%); transform: translate(45%,101%); bottom: 150%; }
+}
+@-o-keyframes balloonsidetoside {
+  0% { -o-transform: translate(0,101%); transform: translate(0,101%); bottom: 0; }
+	100% { -o-transform: translate(45%,101%); transform: translate(45%,101%); bottom: 150%; }
+}
+@keyframes balloonsidetoside {
+  0% { transform: translate(0,101%); bottom: 0; }
+	100% { transform: translate(45%,101%); bottom: 150%; }
+}
+
+@-webkit-keyframes balloonsidetoside {
+  0% { -webkit-transform: translateX(0); transform: translateX(0); }
+	50% { -webkit-transform: translateX(40%); transform: translateX(40%); }
+	100% { -webkit-transform: translateX(0); transform: translateX(0); }
+}
+@-moz-keyframes balloonsidetoside {
+  0% { -moz-transform: translateX(0); transform: translateX(0); }
+	50% { -moz-transform: translateX(40%); transform: translateX(40%); }
+	100% { -moz-transform: translateX(0); transform: translateX(0); }
+}
+@-ms-keyframes balloonsidetoside {
+  0% { -ms-transform: translateX(0); transform: translateX(0); }
+  50% { -ms-transform: translateX(40%); transform: translateX(40%); }
+	100% { -ms-transform: translateX(0); transform: translateX(0); }
+}
+@-o-keyframes balloonsidetoside {
+  0% { -o-transform: translateX(0); transform: translateX(0); }
+  50% { -o-transform: translateX(40%); transform: translateX(40%); }
+	100% { -o-transform: translateX(0); transform: translateX(0); }
+}
+@keyframes balloonsidetoside {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(40%); }
+	100% { transform: translateX(0); }
+}
+
+@media all and (max-width: 740px) {
+	
+	#main #footer,
+	#menu #quicklinks {
+		padding-bottom: 80px; /* extra padding in the mobile footer and flipped nav for the birthday button when you've scrolled all the way down */
+	}
+
+	#birthday-party-mode {
+		right: 50%;
+		-webkit-transform: translateX(50%);
+		-moz-transform: translateX(50%);
+		-ms-transform: translateX(50%);
+		-o-transform: translateX(50%);
+		transform: translateX(50%);
+	}
+	
+	#birthday-party-mode > button {
+		-webkit-transform: scale(.8);
+		-moz-transform: scale(.8);
+		-ms-transform: scale(.8);
+		-o-transform: scale(.8);
+		transform: scale(.8);
+	}
+
+	#birthday-disco-ball {
+		left: 50%;
+		margin-left: -75px;
+		padding-top: 30px;
+		top: 48px;
+	}
+
+	#birthday-disco-ball .hanger {
+		height: 30px;
+	}
+
+	#birthday-disco-ball .discoball {
+		border-radius: 150px;
+		height: 150px;
+		width: 150px;
+	}
+	
+	.birthday-balloons-inner {
+		background-size: 320px 225px;
+		height: 225px;
+		width: 80px;
+	}
+
+	#birthday-balloons-1 { left: 4%; }
+	#birthday-balloons-1 .birthday-balloons-inner { background-position: 0 0; }
+
+	#birthday-balloons-2 { left: 14%; }
+	#birthday-balloons-2 .birthday-balloons-inner { background-position: -80px 0; }
+
+	#birthday-balloons-3 { right: 20%; }
+	#birthday-balloons-3 .birthday-balloons-inner { background-position: -160px 0; }
+
+	#birthday-balloons-4 { right: 8%; }
+	#birthday-balloons-4 .birthday-balloons-inner { background-position: -240px 0; }
+	
+}
