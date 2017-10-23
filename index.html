@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0;">
 <html>
 <head>
 <style> 
@@ -11,7 +12,8 @@
 }
 
 .flex-container > * {
-    padding: 15px;
+    padding-top: 35px;
+    padding-bottom: 20px;
     -webkit-flex: 1 100%;
     flex: 1 100%;
 }
@@ -27,8 +29,14 @@ header {
   color:white;
 }
 
-footer {background: #aaa;color:white;}
-.nav {background:#eee;}
+footer { 
+  font-family: Helvetica;
+  background: black;
+  color:white;}
+
+#left-pane {
+  text-align: center; 
+}
 
 .nav ul {
     list-style-type: none;
@@ -53,26 +61,21 @@ footer {background: #aaa;color:white;}
 </header>
 
 <nav class="nav">
-<ul>
-  <li><a href="#">London</a></li>
-  <li><a href="#">Paris</a></li>
-  <li><a href="#">Tokyo</a></li>
-</ul>
+<div id="left-pane">
+  <span style="font-family: Montserrat, Helvetica, Arial; font-size: x-large; text-align: left;"><strong>New York</strong> &amp; Company’s Store Jobs<br>
+</span>
+<br><br>
+<img height="500px;" width="350px;" src="https://apploi.wpengine.com/wp-content/uploads/2017/10/Pasted_Image_10_4_17__12_40_PM.png">
+</div>
 </nav>
 
 <article class="article">
-  <h1>London</h1>
-  <p>London is the capital city of England. It is the most populous city in the United Kingdom,
-  with a metropolitan area of over 13 million inhabitants.</p>
-  <p>Standing on the River Thames, London has been a major settlement for two millennia,
-  its history going back to its founding by the Romans, who named it Londinium.</p>
-  <p><strong>Resize this page to see that what happens!</strong></p>
+  <script src="https://apploi-api-staging-pr-387.herokuapp.com/v1/jobs_snippet?utm_term=josh-reiss&utm_campaign=jobs_snippet&utm_medium=client-web-site&utm_source=new-york-and-company-career-page&team_id=29610&job_details_strip=true&job_details_strip_color=211d1c&job_details_strip_font_size=11px&job_link_color=000000&job_link_font_size=15px&controls_font_color=000000&controls_bkgd_color=e2e2e0&controls_font_size=17px&show_state_dropdown=true&show_district_dropdown=false"></script>
 </article>
 
-<footer>Copyright &copy; W3Schools.com</footer>
+<footer>© 2008-2017 NEW YORK & COMPANY. ALL RIGHTS RESERVED.
+ </footer>
 </div>
 
 </body>
 </html>
-
-  <script src="https://apploi-api-staging-pr-387.herokuapp.com/v1/jobs_snippet?utm_term=josh-reiss&utm_campaign=jobs_snippet&utm_medium=client-web-site&utm_source=new-york-and-company-career-page&team_id=29610&job_details_strip=true&job_details_strip_color=211d1c&job_details_strip_font_size=11px&job_link_color=000000&job_link_font_size=15px&controls_font_color=000000&controls_bkgd_color=e2e2e0&controls_font_size=17px&show_state_dropdown=true&show_district_dropdown=false"></script>
